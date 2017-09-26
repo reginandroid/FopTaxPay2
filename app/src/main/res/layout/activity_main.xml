@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    android:scrollbarStyle="insideInset">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:text="Выберете Ваш регион"/>
+
+    <Spinner
+        android:id="@+id/city_region_spinner"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+    </Spinner>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        >
+
+    <Button
+        android:id="@+id/btn_edinii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Показать Реквизиты Единого налога для ФЛП"
+        />
+    <FrameLayout
+        android:id="@+id/frg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_weight="1"
+        />
+</LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        >
+        <Button
+            android:id="@+id/btn_esv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Показать Реквизиты ЕСВ для ФЛП" />
+    <FrameLayout
+            android:id="@+id/frg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+    </FrameLayout>
+</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        ></LinearLayout>
+</LinearLayout>
+</ScrollView>
